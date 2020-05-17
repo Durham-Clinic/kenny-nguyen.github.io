@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>
+            Survey
+        </title>
+    </head>
+    <body>  
+        <h1>Survey</h1>
+        <form id="myform" action="index.php" width="max">
+        <br>
+        <br>
+        <h2>Please review the UI of Youtube's <a href="https://www.youtube.com/feed/trending">trending</a> page: </h2>
+        <br>
+        <a href=https://www.youtube.com/feed/trending>
+            <img src="Youtube-Trending.png" alt="https://www.youtube.com/feed/trending" width="450" height="300">
+        </a>
+        <br>
+        <!--Text type question-->
+        <div class="question">
+            <h3>Personal Information</h3>
+            <p>First name: <input type="text" name="firstname"></p>
+            <p>Last name: <input type="text" name="lastname"></p>
+            <br>
+            <br>
+        </div>
+        <!--Single Choice type question (radio button)-->
+        <div class="question">
+            <h3>What is your gender?</h3>
+            <input type="radio" name="sex" value="male">Male<br>
+            <input type="radio" name="sex" value="female">Female<br>
+            <input type="radio" name="sex" value="unknown">Prefer not to say.<br>
+            <br>
+            <br>
+        </div>
+        <!--Single Choice type quesation (single selection list)-->
+        <div class="question">
+            <h3>How often do you browse the trending page?</h3>
+            <select name="browsingfrequency">
+            <option value="1" selected="selected">1 (Not Often)</option>
+            <option value="2" selected="selected">2</option>
+            <option value="3" selected="selected">3</option>
+            <option value="4" selected="selected">4</option>
+            <option value="5" selected="selected">5 (Often)</option>
+            </select>
+        </div>
+        <!--Multi-Selection type question-->
+        <div class="question">
+            <h3>Please select ALL statements that you agree with.</h3>
+            <input type="checkbox" name="frequency" value="frequency">I browse the trending page often.<br>
+            <input type="checkbox" name="navigation" value="navigation">The trending page is easy to navigate.<br>
+            <input type="checkbox" name="volume" value="volume">I watch multiple videos on the trending page in one sitting.<br>
+            <input type="checkbox" name="issues" value="issues">I have no issues with the trending page.<br>
+            <br>
+            <br>
+        </div>
+        <!--Likert type question-->
+        <div class="question">
+            <table class="likert">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Strong Disagree</th>
+                        <th>Disagree</th>
+                        <th>Neither</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The UI does an effective job at capturing my attention.</td>
+                        <td><center><input type="radio" value="1" name="enthusiasm"/></center></td>
+                        <td><center><input type="radio" value="2" name="enthusiasm"/></center></td>
+                        <td><center><input type="radio" value="3" name="enthusiasm"/></center></td>
+                        <td><center><input type="radio" value="4" name="enthusiasm"/></center></td>
+                        <td><center><input type="radio" value="5" name="enthusiasm"/></center></td>
+                    </tr>
+                    <tr>
+                        <td>I usually care about the content on the trending page.</td>
+                        <td><center><input type="radio" value="1" name="knowledgeable"/></center></td>
+                        <td><center><input type="radio" value="2" name="knowledgeable"/></center></td>
+                        <td><center><input type="radio" value="3" name="knowledgeable"/></center></td>
+                        <td><center><input type="radio" value="4" name="knowledgeable"/></center></td>
+                        <td><center><input type="radio" value="5" name="knowledgeable"/></center></td>
+                    </tr>
+                    <tr>
+                        <td>I am more likely to share videos that are on the trending page.</td>
+                        <td><center><input type="radio" value="1" name="timeliness"/></center></td>
+                        <td><center><input type="radio" value="2" name="timeliness"/></center></td>
+                        <td><center><input type="radio" value="3" name="timeliness"/></center></td>
+                        <td><center><input type="radio" value="4" name="timeliness"/></center></td>
+                        <td><center><input type="radio" value="5" name="timeliness"/></center></td>
+                    </tr>
+                    <tr>
+                        <td>I like the layout of the UI.</td>
+                        <td><center><input type="radio" value="1" name="helpful"/></center></td>
+                        <td><center><input type="radio" value="2" name="helpful"/></center></td>
+                        <td><center><input type="radio" value="3" name="helpful"/></center></td>
+                        <td><center><input type="radio" value="4" name="helpful"/></center></td>
+                        <td><center><input type="radio" value="5" name="helpful"/></center></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="question">
+            <h3>Any comments or suggestions on improving the UI?</h3>
+            <textarea placeholder="Enter your comment here..." rows="5" cols="30"></textarea>
+        </div>
+        <br>
+        <br>
+        <button id="submitButton" type="button" class="block">Submit Questionnaire</button>
+        <p2 id="signature">Questionnaire created by Kenny Nguyen</p2>
+        </form>
+    </body>
+</html>
