@@ -1,0 +1,43 @@
+<!--https://www.wikihow.com/Create-a-Questionnaire-in-HTML-->
+<html>
+<head><title>Questionnaire</title></head>
+	<body>
+
+<!--Form tags are used to send data to server, 'action' allows you to tell the form where to go once submitted, 'name' is used to uniquely identify the form on a given page, 'method' tells the form how to send the data once submitted - This value should be POST.-->
+		<form action="index.php" name="my form" method="POST">
+		First name: <input type="text" name="firstname"><br>
+		Last name: <input type="text" name="lastname"><br>
+
+
+<!--Creates radio button - allows for a single selection-->
+		Are you:<br>
+		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="female">Female<br>
+
+
+<!--Create check boxes, which allows for more than one option to be selected -->
+		I like:<br>
+		<input type="checkbox" name="Apples" value="Apples">Apples<br>
+		<input type="checkbox" name="Oranges" value="Oranges">Oranges<br>
+		<input type="checkbox" name="Bananas" value="Bananas">Bananas<br>
+
+
+<!--Creates a drop-down selection list -->
+		What is your favourite fruit?<br><select name="favorite">
+		<option value="Apples" selected="selected">Apples</option>
+		<option value="Oranges" selected="selected">Oranges</option>
+		<option value="Bananas" selected="selected">Bananas</option>
+
+
+<!--Creates a comment box using textarea, which is a multi-line box suitable to take larger blocks of text-->
+		<br>Comments:<br>
+		<textarea placeholder="For Additional Comments." rows="5" cols="30"></textarea>
+
+
+<!--Create the submit button which allows submission of the form-->
+		<br><input type="submit" value="submit the questionnaire"/>
+	
+		</form>
+	</body>
+
+</html>
