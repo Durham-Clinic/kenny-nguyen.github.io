@@ -25,7 +25,7 @@ function openInfo(evt, tabName) {
 
 	
 // generate a checkbox list from a list of products
-// it makes each product name as the label for the checkboxes
+// it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2) {
     var s1 = document.getElementById(slct1);
@@ -57,9 +57,6 @@ function populateListProductChoices(slct1, slct2) {
 		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
 		s2.append(": $"+optionArray[i][1]+" / unit");
-
-		// adds price for the checkbox, and also add in HTML DOM
-
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
