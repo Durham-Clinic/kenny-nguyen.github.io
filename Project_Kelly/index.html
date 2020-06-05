@@ -1,20 +1,38 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <!-- add style sheet css -->
-        <title>Kelly's Checklist</title>
-        <h>Presentation's Checklist</h>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <title>
+            Clinic CheckList
+        </title>
+        <h1>Clinic Checklist</h1>
     </head>
-    <body>
-        <p>Please check the items you have completed:</p>
-        <div id="checklist">
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br> 
+    <body>  
+        <form id="myform" action="index.php" width="max">
+        <!--Multi-Selection type question-->
+        <div class="question" style=>
+            <h2>Please check off completed items: </h2><br>
+            <input type="checkbox" name="Clinic Consent">Clinic Consent<br>
+            <input type="checkbox" name="Medical History">Medical History<br> 
+            <input type="checkbox" name="Dental History">Dental History<br>
+            <input type="checkbox" name="Survey of Tobacco use or other Inhalation products">Survey of Tobacco use or other Inhalation products<br>
+            <input type="checkbox" name="24 Hour Dietary Record">24 Hour Dietary Record<br>
+            <input type="checkbox" name="">Extraoral/Intraoral Clinical Assessment<br>
+            <input type="checkbox" name="">Occlusion<br>
+            <input type="checkbox" name="">Caries Risk Assessment<br>
+            <input type="checkbox" name="">Radiographic Advocacy/Treatment Plan<br>
+            <input type="checkbox" name="">Radiographic Assessment <br>
+            <input type="checkbox" name="">Periodontal Assessment<br>
+            <input type="checkbox" name="">Oral Deposit Assessment<br>
+            <input type="checkbox" name="">Periodontal Condition<br>
+            <input type="checkbox" name="">Dental Hygiene Interventions/Care Plan<br>
+            <input type="checkbox" name="">Dental Hygiene Interventions<br>
+            <input type="checkbox" name="Modification to Care Plan">Modification to Care Plan<br>
+            <input type="checkbox" name="Dental Hygiene Care Evaluation">Dental Hygiene Care Evaluation<br>
+            <input type="checkbox" name="Audit Checklist">Audit Checklist<br>
+            <br>
         </div>
+        </form>
     </body>
 </html>
